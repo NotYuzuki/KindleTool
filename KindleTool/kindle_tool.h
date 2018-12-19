@@ -421,6 +421,25 @@ typedef struct
 	} data;
 } UpdateHeader;
 
+// Stuff a bunch of things we need across a few different functions in there ;p.
+typedef struct
+{
+	// Convert
+	bool info_only;
+	bool unwrap_only;
+	char header_md5[MD5_HASH_LENGTH + 1];
+	bool is_wrapped;
+	// Create
+	const struct rsa_private_key* rsa_pkey;
+	bool legacy;
+	unsigned int real_blocksize;
+	// Common
+	bool fake_sign;
+	// Main
+	bool unknown_devs;
+	char kt_tempdir[PATH_MAX];
+} KToolContext;
+
 // Ugly global. Used to cache the state of the KT_WITH_UNKNOWN_DEVCODES env var...
 // NOTE: While this looks like the ideal candidate to be a bool,
 //       we can't do that because we use its value in unsigned operations,
