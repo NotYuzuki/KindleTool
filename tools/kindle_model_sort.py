@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import sys
 from operator import itemgetter
 
 # NOTE: Pilfered from https://code.activestate.com/recipes/65212/
@@ -33,6 +34,10 @@ def devCode(string):
 		num = num * BASE_LEN + BASE_DICT[char]
 	return num
 
+# Just do a conversion (SN -> devCode) if we were passed an argument...
+if len(sys.argv) > 1:
+	print("0x{:03X}".format(devCode(sys.argv[1])))
+	exit()
 
 model_tuples = [
 	('Kindle1',						0x01,	'ATVPDKIKX0DER'),
@@ -182,6 +187,23 @@ model_tuples = [
 	('KindleScribe_23L',					0x874,	'A12KI9K1KHHBVF'),	# 23L
 	('KindleScribe64GB_23M',				0x875,	'A12KI9K1KHHBVF'),	# 23M
 	('KindleScribeUnknown_270',				0x8E0,	'A12KI9K1KHHBVF'),	# 270?
+	('Kindle2024Unknown_3L5',				0xE85,	'A2AJ1N357FEMTV'),	# 3L5?
+	('Kindle2024Unknown_3L6',				0xE86,	'A2AJ1N357FEMTV'),	# 3L6?
+	('Kindle2024Unknown_3L4',				0xE84,	'A2AJ1N357FEMTV'),	# 3L4?
+	('Kindle2024Unknown_3L3',				0xE83,	'A2AJ1N357FEMTV'),	# 3L3?
+	('Kindle2024Unknown_A89',				0x2909,	'A2AJ1N357FEMTV'),	# A89?
+	('Kindle2024Unknown_3L2',				0xE82,	'A2AJ1N357FEMTV'),	# 3L2?
+	('Kindle2024Unknown_3KM',				0xE75,	'A2AJ1N357FEMTV'),	# 3KM?
+	('Kindle2024AlsoUnknown_349',				0xC89,	'A1BF5SA90HOYO2'),	# 349?
+	('Kindle2024AlsoUnknown_346',				0xC86,	'A1BF5SA90HOYO2'),	# 346?
+	('Kindle2024AlsoUnknown_33X',				0xC7F,	'A1BF5SA90HOYO2'),	# 33X?
+	('Kindle2024AlsoUnknown_33W',				0xC7E,	'A1BF5SA90HOYO2'),	# 33W?
+	('Kindle2024AlsoUnknown_3HA',				0xE2A,	'A1BF5SA90HOYO2'),	# 3HA?
+	('Kindle2024AlsoUnknown_3H5',				0xE25,	'A1BF5SA90HOYO2'),	# 3H5?
+	('Kindle2024AlsoUnknown_3H3',				0xE23,	'A1BF5SA90HOYO2'),	# 3H3?
+	('Kindle2024AlsoUnknown_3H8',				0xE28,	'A1BF5SA90HOYO2'),	# 3H8?
+	('Kindle2024AlsoUnknown_3J5',				0xE45,	'A1BF5SA90HOYO2'),	# 3J5?
+	('Kindle2024AlsoUnknown_3JS',				0xE5A,	'A1BF5SA90HOYO2'),	# 3JS?
 	('KindleUnknown', 0x00)
 ]
 
