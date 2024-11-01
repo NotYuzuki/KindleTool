@@ -187,16 +187,16 @@ model_tuples = [
 	('KindleScribe_23L',					0x874,	'A12KI9K1KHHBVF'),	# 23L
 	('KindleScribe64GB_23M',				0x875,	'A12KI9K1KHHBVF'),	# 23M
 	('KindleScribeUnknown_270',				0x8E0,	'A12KI9K1KHHBVF'),	# 270?
-	('Kindle2024Unknown_3L5',				0xE85,	'A2AJ1N357FEMTV'),	# 3L5?
-	('Kindle2024Unknown_3L6',				0xE86,	'A2AJ1N357FEMTV'),	# 3L6?
-	('Kindle2024Unknown_3L4',				0xE84,	'A2AJ1N357FEMTV'),	# 3L4?
-	('Kindle2024Unknown_3L3',				0xE83,	'A2AJ1N357FEMTV'),	# 3L3?
-	('Kindle2024Unknown_A89',				0x2909,	'A2AJ1N357FEMTV'),	# A89?
-	('Kindle2024Unknown_3L2',				0xE82,	'A2AJ1N357FEMTV'),	# 3L2?
-	('Kindle2024Unknown_3KM',				0xE75,	'A2AJ1N357FEMTV'),	# 3KM?
+	('KindleBasic5Unknown_3L5',				0xE85,	'A2AJ1N357FEMTV'),	# 3L5?
+	('KindleBasic5Unknown_3L6',				0xE86,	'A2AJ1N357FEMTV'),	# 3L6?
+	('KindleBasic5Unknown_3L4',				0xE84,	'A2AJ1N357FEMTV'),	# 3L4?
+	('KindleBasic5Unknown_3L3',				0xE83,	'A2AJ1N357FEMTV'),	# 3L3?
+	('KindleBasic5Unknown_A89',				0x2909,	'A2AJ1N357FEMTV'),	# A89?
+	('KindleBasic5Unknown_3L2',				0xE82,	'A2AJ1N357FEMTV'),	# 3L2?
+	('KindleBasic5Unknown_3KM',				0xE75,	'A2AJ1N357FEMTV'),	# 3KM
 	('KindlePaperWhite6Unknown_349',			0xC89,	'A1BF5SA90HOYO2'),	# 349?
 	('KindlePaperWhite6Unknown_346',			0xC86,	'A1BF5SA90HOYO2'),	# 346?
-	('KindlePaperWhite6Unknown_33X',			0xC7F,	'A1BF5SA90HOYO2'),	# 33X?
+	('KindlePaperWhite6Unknown_33X',			0xC7F,	'A1BF5SA90HOYO2'),	# 33X
 	('KindlePaperWhite6Unknown_33W',			0xC7E,	'A1BF5SA90HOYO2'),	# 33W?
 	('KindlePaperWhite6Unknown_3HA',			0xE2A,	'A1BF5SA90HOYO2'),	# 3HA?
 	('KindlePaperWhite6Unknown_3H5',			0xE25,	'A1BF5SA90HOYO2'),	# 3H5?
