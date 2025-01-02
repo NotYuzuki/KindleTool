@@ -352,6 +352,36 @@ typedef enum
 	KindleScribe_23L                  = 0x874,    // 23L
 	KindleScribe64GB_23M              = 0x875,    // 23M (US, 64GB, Premium Pen)
 	KindleScribeUnknown_270           = 0x8E0,    // 270?
+	// Kindle Basic 5, released October 2024 on FW 5.17.x
+	KindleBasic5Unknown_3L5           = 0xE85,     // 3L5?
+	KindleBasic5Unknown_3L6           = 0xE86,     // 3L6?
+	KindleBasic5Unknown_3L4           = 0xE84,     // 3L4?
+	KindleBasic5Unknown_3L3           = 0xE83,     // 3L3?
+	KindleBasic5Unknown_A89           = 0x2909,    // A89?
+	KindleBasic5Unknown_3L2           = 0xE82,     // 3L2?
+	KindleBasic5Unknown_3KM           = 0xE75,     // 3KM
+	// Kindle PaperWhite 6, released October 2024 on FW 5.17.x
+	KindlePaperWhite6Unknown_349      = 0xC89,    // 349?
+	KindlePaperWhite6Unknown_346      = 0xC86,    // 346?
+	KindlePaperWhite6Unknown_33X      = 0xC7F,    // 33X
+	KindlePaperWhite6Unknown_33W      = 0xC7E,    // 33W?
+	KindlePaperWhite6Unknown_3HA      = 0xE2A,    // 3HA?
+	KindlePaperWhite6Unknown_3H5      = 0xE25,    // 3H5?
+	KindlePaperWhite6Unknown_3H3      = 0xE23,    // 3H3?
+	KindlePaperWhite6Unknown_3H8      = 0xE28,    // 3H8?
+	KindlePaperWhite6Unknown_3J5      = 0xE45,    // 3J5?
+	KindlePaperWhite6Unknown_3JS      = 0xE5A,    // 3JS?
+	// Kindle ColorSoft, released October 2024 on FW 5.18.0
+	KindleColorSoftUnknown_3H9        = 0xE29,     // 3H9?
+	KindleColorSoftUnknown_3H4        = 0xE24,     // 3H4?
+	KindleColorSoftUnknown_3HB        = 0xE2B,     // 3HB?
+	KindleColorSoftUnknown_3H6        = 0xE26,     // 3H6?
+	KindleColorSoftUnknown_3H2        = 0xE22,     // 3H2?
+	KindleColorSoftUnknown_34X        = 0xC9F,     // 34X?
+	KindleColorSoftUnknown_3H7        = 0xE27,     // 3H7
+	KindleColorSoftUnknown_3JT        = 0xE5B,     // 3JT?
+	KindleColorSoftUnknown_3J6        = 0xE46,     // 3J6?
+	KindleColorSoftUnknown_456        = 0x10A6,    // 456?
 	KindleUnknown                     = 0x00
 } Device;
 

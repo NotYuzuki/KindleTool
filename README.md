@@ -83,7 +83,10 @@
 		-d, --device paperwhite5    Includes all known Kindle PaperWhite 5 variants
 		-d, --device basic4         Includes all known Kindle Basic 4 variants
 		-d, --device scribe         Includes all known Kindle Scribe variants
-		-d, --device kindle5        Alias for touch + paperwhite + paperwhite2 + basic + voyage + paperwhite3 + oasis + basic2 + oasis2 + paperwhite4 + basic3 + oasis3 + paperwhite5 + basic4 + scribe
+		-d, --device basic5         Includes all known Kindle Basic 5 variants
+		-d, --device paperwhite6    Includes all known Kindle PaperWhite 6 variants
+		-d, --device colorsoft      Includes all known Kindle ColorSoft variants
+		-d, --device kindle5        Alias for touch + paperwhite + paperwhite2 + basic + voyage + paperwhite3 + oasis + basic2 + oasis2 + paperwhite4 + basic3 + oasis3 + paperwhite5 + basic4 + scribe + basic5 + paperwhite6 + colorsoft
 		-d, --device none           No specific device (Recovery V2 & Recovery FB02 with header rev 2 only, default).
 		-d, --device auto           The current device (Obviously, has to be run from a Kindle).
 

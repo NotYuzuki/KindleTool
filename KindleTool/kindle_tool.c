@@ -482,6 +482,60 @@ const char*
 			return "Kindle Scribe (64GB) (Variant 23M)";
 		case KindleScribeUnknown_270:
 			return "Kindle Scribe (Unknown Variant 270)";
+		case KindleBasic5Unknown_3L5:
+			return "Kindle Basic 5 (2024) (Unknown Variant 3L5)";
+		case KindleBasic5Unknown_3L6:
+			return "Kindle Basic 5 (2024) (Unknown Variant 3L6)";
+		case KindleBasic5Unknown_3L4:
+			return "Kindle Basic 5 (2024) (Unknown Variant 3L4)";
+		case KindleBasic5Unknown_3L3:
+			return "Kindle Basic 5 (2024) (Unknown Variant 3L3)";
+		case KindleBasic5Unknown_A89:
+			return "Kindle Basic 5 (2024) (Unknown Variant A89)";
+		case KindleBasic5Unknown_3L2:
+			return "Kindle Basic 5 (2024) (Unknown Variant 3L2)";
+		case KindleBasic5Unknown_3KM:
+			return "Kindle Basic 5 (2024) (Unknown Variant 3KM)";
+		case KindlePaperWhite6Unknown_349:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 349)";
+		case KindlePaperWhite6Unknown_346:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 346)";
+		case KindlePaperWhite6Unknown_33X:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 33X)";
+		case KindlePaperWhite6Unknown_33W:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 33W)";
+		case KindlePaperWhite6Unknown_3HA:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 3HA)";
+		case KindlePaperWhite6Unknown_3H5:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 3H5)";
+		case KindlePaperWhite6Unknown_3H3:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 3H3)";
+		case KindlePaperWhite6Unknown_3H8:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 3H8)";
+		case KindlePaperWhite6Unknown_3J5:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 3J5)";
+		case KindlePaperWhite6Unknown_3JS:
+			return "Kindle PaperWhite 6 (2024) (Unknown Variant 3JS)";
+		case KindleColorSoftUnknown_3H9:
+			return "Kindle ColorSoft (2024) (Unknown Variant 3H9)";
+		case KindleColorSoftUnknown_3H4:
+			return "Kindle ColorSoft (2024) (Unknown Variant 3H4)";
+		case KindleColorSoftUnknown_3HB:
+			return "Kindle ColorSoft (2024) (Unknown Variant 3HB)";
+		case KindleColorSoftUnknown_3H6:
+			return "Kindle ColorSoft (2024) (Unknown Variant 3H6)";
+		case KindleColorSoftUnknown_3H2:
+			return "Kindle ColorSoft (2024) (Unknown Variant 3H2)";
+		case KindleColorSoftUnknown_34X:
+			return "Kindle ColorSoft (2024) (Unknown Variant 34X)";
+		case KindleColorSoftUnknown_3H7:
+			return "Kindle ColorSoft (2024) (Unknown Variant 3H7)";
+		case KindleColorSoftUnknown_3JT:
+			return "Kindle ColorSoft (2024) (Unknown Variant 3JT)";
+		case KindleColorSoftUnknown_3J6:
+			return "Kindle ColorSoft (2024) (Unknown Variant 3J6)";
+		case KindleColorSoftUnknown_456:
+			return "Kindle ColorSoft (2024) (Unknown Variant 456)";
 		case KindleUnknown:
 		default:
 			return "Unknown";
@@ -696,7 +750,10 @@ static int
 	    "      -d, --device paperwhite5    Includes all known Kindle PaperWhite 5 variants\n"
 	    "      -d, --device basic4         Includes all known Kindle Basic 4 variants\n"
 	    "      -d, --device scribe         Includes all known Kindle Scribe variants\n"
-	    "      -d, --device kindle5        Alias for touch + paperwhite + paperwhite2 + basic + voyage + paperwhite3 + oasis + basic2 + oasis2 + paperwhite4 + basic3 + oasis3 + paperwhite5 + basic4 + scribe\n"
+	    "      -d, --device basic5         Includes all known Kindle Basic 5 variants\n"
+	    "      -d, --device paperwhite6    Includes all known Kindle PaperWhite 6 variants\n"
+	    "      -d, --device colorsoft      Includes all known Kindle ColorSoft variants\n"
+	    "      -d, --device kindle5        Alias for touch + paperwhite + paperwhite2 + basic + voyage + paperwhite3 + oasis + basic2 + oasis2 + paperwhite4 + basic3 + oasis3 + paperwhite5 + basic4 + scribe + basic5 + paperwhite6 + colorsoft\n"
 	    "      -d, --device none           No specific device (Recovery V2 & Recovery FB02 with header rev 2 only, default).\n"
 	    "      -d, --device auto           The current device (Obviously, has to be run from a Kindle).\n"
 	    "      \n"
