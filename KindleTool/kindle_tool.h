@@ -371,6 +371,7 @@ typedef enum
 	Rex              = 0x0B,    // Kindle PW4, Basic 3 (10th gen)
 	Bellatrix        = 0x0C,    // Kindle PW5 (11th gen), Basic 4
 	Bellatrix3       = 0x0D,    // Kindle Scribe
+	Bellatrix4       = 0x0E,    // Kindle PW6 (12th gen), ColorSoft
 } Platform;
 
 typedef enum

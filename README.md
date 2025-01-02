@@ -104,6 +104,7 @@
 		-p, --platform rex          Rex (mostly devices shipped on FW >= 5.10).
 		-p, --platform bellatrix    Bellatrix (mostly devices shipped on FW >= 5.14).
 		-p, --platform bellatrix3   Bellatrix3 (mostly devices shipped on FW >= 5.16).
+		-p, --platform bellatrix4   Bellatrix4 (mostly devices shipped on FW >= 5.18).
 
 	Boards:
 		Recovery V2 & Recovery FB02 with header rev 2 updates only. Use a single board per package.

@@ -2089,6 +2089,8 @@ int
 					info.platform = Bellatrix;
 				} else if (strcasecmp(optarg, "bellatrix3") == 0) {
 					info.platform = Bellatrix3;
+				} else if (strcasecmp(optarg, "bellatrix4") == 0) {
+					info.platform = Bellatrix4;
 				} else {
 					fprintf(stderr, "Unknown platform %s.\n", optarg);
 					goto do_error;

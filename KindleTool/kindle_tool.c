@@ -520,6 +520,8 @@ const char*
 			return "Bellatrix";
 		case Bellatrix3:
 			return "Bellatrix3";
+		case Bellatrix4:
+			return "Bellatrix4";
 		default:
 			return "Unknown";
 	}
@@ -715,6 +717,7 @@ static int
 	    "      -p, --platform rex          Rex (mostly devices shipped on FW >= 5.10).\n"
 	    "      -p, --platform bellatrix    Bellatrix (mostly devices shipped on FW >= 5.14).\n"
 	    "      -p, --platform bellatrix3   Bellatrix3 (mostly devices shipped on FW >= 5.16).\n"
+	    "      -p, --platform bellatrix4   Bellatrix4 (mostly devices shipped on FW >= 5.18).\n"
 	    "      \n"
 	    "    Boards:\n"
 	    "      Recovery V2 & Recovery FB02 with header rev 2 updates only. Use a single board per package.\n"
