@@ -1040,13 +1040,13 @@ int
 	int                        opt;
 	int                        opt_index;
 	static const struct option opts[] = {
-		{  "stdout", no_argument, NULL, 'c'},
-		{    "info", no_argument, NULL, 'i'},
-		{    "keep", no_argument, NULL, 'k'},
-		{     "sig", no_argument, NULL, 's'},
-		{"unsigned", no_argument, NULL, 'u'},
-		{  "unwrap", no_argument, NULL, 'w'},
-		{      NULL,           0, NULL,   0}
+		{   "stdout", no_argument, NULL, 'c' },
+		{     "info", no_argument, NULL, 'i' },
+		{     "keep", no_argument, NULL, 'k' },
+		{      "sig", no_argument, NULL, 's' },
+		{ "unsigned", no_argument, NULL, 'u' },
+		{   "unwrap", no_argument, NULL, 'w' },
+		{       NULL,           0, NULL,   0 }
 	};
 	FILE*               input;
 	FILE*               output        = NULL;
@@ -1434,8 +1434,8 @@ int
 	int                        opt;
 	int                        opt_index;
 	static const struct option opts[] = {
-		{"unsigned", no_argument, NULL, 'u'},
-                {      NULL,           0, NULL,   0}
+		{ "unsigned", no_argument, NULL, 'u' },
+                {       NULL,           0, NULL,   0 }
 	};
 	bool fake_sign = false;
 
