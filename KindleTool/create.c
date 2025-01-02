@@ -292,7 +292,7 @@ static int
 					return 0;
 				}
 				progress += bytes_written;
-				sparse -= bytes_written;
+				sparse   -= bytes_written;
 			}
 		}
 
@@ -1004,7 +1004,7 @@ static int
 
 	// Next, we write the devices
 	header_size += info->num_devices * sizeof(uint16_t);
-	header = realloc(header, header_size);
+	header       = realloc(header, header_size);
 	for (i = 0; i < info->num_devices; i++) {
 		memcpy(&header[hindex], &info->devices[i], sizeof(uint16_t));    // Device
 		hindex += sizeof(uint16_t);
@@ -1012,7 +1012,7 @@ static int
 
 	// Part two of the set sized data
 	header_size += OTA_UPDATE_V2_PART_2_BLOCK_SIZE;
-	header = realloc(header, header_size);
+	header       = realloc(header, header_size);
 	memcpy(&header[hindex], &info->critical, sizeof(uint8_t));    // Critical
 	hindex += sizeof(uint8_t);
 	memset(&header[hindex], 0, sizeof(uint8_t));    // 1 byte padding
@@ -1052,9 +1052,9 @@ static int
 
 	// Next, we write the meta strings
 	for (i = 0; i < info->num_meta; i++) {
-		str_len = strlen(info->metastrings[i]);    // Flawfinder: ignore
+		str_len      = strlen(info->metastrings[i]);    // Flawfinder: ignore
 		header_size += str_len + sizeof(uint16_t);
-		header = realloc(header, header_size);
+		header       = realloc(header, header_size);
 		// String length: little endian -> big endian
 		// FIXME: While otaup expects this endianness switch, it would seem that otacheck doesn't,
 		//        and chokes with an headerTooShortInMetadataField error as soon as we pass more than one metastring...
@@ -1285,9 +1285,9 @@ static int
 	memcpy(&header[hindex], &info->board, sizeof(uint32_t));    // Board
 	hindex += sizeof(uint32_t);
 
-	hindex += sizeof(uint32_t);                                         // Padding
-	hindex += sizeof(uint16_t);                                         // ... Padding
-	hindex += sizeof(uint8_t);                                          // And more weird padding
+	hindex              += sizeof(uint32_t);                            // Padding
+	hindex              += sizeof(uint16_t);                            // ... Padding
+	hindex              += sizeof(uint8_t);                             // And more weird padding
 	recovery_num_devices = (uint8_t) info->num_devices;                 // u16 to u8...
 	memcpy(&header[hindex], &recovery_num_devices, sizeof(uint8_t));    // Device count
 	hindex += sizeof(uint8_t);

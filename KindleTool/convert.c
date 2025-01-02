@@ -374,7 +374,7 @@ static int
 	consume_header_item(&padding, &pos, sizeof(padding));
 	fprintf(stderr, "Padding Byte   %hhu (0x%02X)\n", padding, padding);
 	pkg_md5_sum = (char*) pos;
-	pos += MD5_HASH_LENGTH;
+	pos        += MD5_HASH_LENGTH;
 	dm((unsigned char*) pkg_md5_sum, MD5_HASH_LENGTH);
 	fprintf(stderr, "MD5 Hash       %.*s\n", MD5_HASH_LENGTH, pkg_md5_sum);
 	strncpy(header_md5, pkg_md5_sum, MD5_HASH_LENGTH);    // Flawfinder: ignore
@@ -755,7 +755,7 @@ static int
 	consume_header_item(&target_revision, &pos, sizeof(target_revision));
 	fprintf(stderr, "Target OTA     %llu\n", (long long unsigned int) target_revision);
 	pkg_md5_sum = (char*) pos;
-	pos += MD5_HASH_LENGTH;
+	pos        += MD5_HASH_LENGTH;
 	dm((unsigned char*) pkg_md5_sum, MD5_HASH_LENGTH);
 	fprintf(stderr, "MD5 Hash       %.*s\n", MD5_HASH_LENGTH, pkg_md5_sum);
 	strncpy(header_md5, pkg_md5_sum, MD5_HASH_LENGTH);    // Flawfinder: ignore
@@ -914,7 +914,7 @@ static int
 	consume_header_item(&target_revision, &pos, sizeof(target_revision));
 	fprintf(stderr, "Target OTA     %llu\n", (long long unsigned int) target_revision);
 	pkg_sha256_sum = (const char*) pos;
-	pos += SHA256_HASH_LENGTH;
+	pos           += SHA256_HASH_LENGTH;
 	//dm((unsigned char*) pkg_sha256_sum, SHA256_HASH_LENGTH); // It's in clear
 	// NOTE: It's the hash of the single binary *inside* the tarball, not the tarball itself
 	fprintf(stderr, "SHA256 Hash    %.*s\n", SHA256_HASH_LENGTH, pkg_sha256_sum);
@@ -1359,7 +1359,7 @@ static int
 	size_t                len;
 
 	// Select which attributes we want to restore.
-	flags = ARCHIVE_EXTRACT_TIME;
+	flags  = ARCHIVE_EXTRACT_TIME;
 	// Don't preserve permissions, as most files in kindle packages will be owned by root,
 	// and if the perms are effed up, it gets annoying.
 	// We could also just rewrite every entry in the archive with sane permissions, but that seems a bit overkill.
