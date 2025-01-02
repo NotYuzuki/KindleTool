@@ -397,6 +397,9 @@ typedef enum
 	Malbec            = 0xFF     // Kindle PW5
 	Cava              = 0xFF     // Kindle Basic 4
 	Barolo            = 0xFF     // Kindle Scribe
+	Rossini           = 0xFF     // Kindle Basic 5
+	Sangria           = 0xFF     // Kindle PW6
+	SeaBreeze         = 0xFF     // Kindle ColorSoft
 				     */
 } Board;
 
@@ -434,6 +437,9 @@ typedef enum
 // Malbec                     // Kindle PW5 (First Bellatrix board. No longer an i.MX SoC, but a MediaTek one: MT8110, likely based on the MT8512) - Kindle Paperwhite (11th Generation)
 // Cava                       // Kindle Basic 4 (KT5) [Kindle 11th gen] - Kindle (11th Generation)
 // Barolo                     // Kindle Scribe (First Bellatrix3 board) - Kindle Scribe
+// Rossini                    // Kindle Basic 5 (KT6) [Kindle 11th gen - 2024] - Kindle (11th Generation) - 2024 Release
+// Sangria                    // Kindle PW6 (First Bellatrix4 board w/ the CS) - Kindle Paperwhite (12th Generation) - 2024 Release
+// SeaBreeze                  // Kindle CS - Kindle ColorSoft
 
 typedef struct
 {
