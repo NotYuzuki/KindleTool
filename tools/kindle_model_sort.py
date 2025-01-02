@@ -204,6 +204,16 @@ model_tuples = [
 	('KindlePaperWhite6Unknown_3H8',			0xE28,	'A1BF5SA90HOYO2'),	# 3H8?
 	('KindlePaperWhite6Unknown_3J5',			0xE45,	'A1BF5SA90HOYO2'),	# 3J5?
 	('KindlePaperWhite6Unknown_3JS',			0xE5A,	'A1BF5SA90HOYO2'),	# 3JS?
+	('KindleColorSoftUnknown_3H9',				0xE29,	'A2CU9ZQDNZFID4'),	# 3H9?
+	('KindleColorSoftUnknown_3H4',				0xE24,	'A2CU9ZQDNZFID4'),	# 3H4?
+	('KindleColorSoftUnknown_3HB',				0xE2B,	'A2CU9ZQDNZFID4'),	# 3HB?
+	('KindleColorSoftUnknown_3H6',				0xE26,	'A2CU9ZQDNZFID4'),	# 3H6?
+	('KindleColorSoftUnknown_3H2',				0xE22,	'A2CU9ZQDNZFID4'),	# 3H2?
+	('KindleColorSoftUnknown_34X',				0xC9F,	'A2CU9ZQDNZFID4'),	# 34X?
+	('KindleColorSoftUnknown_3H7',				0xE27,	'A2CU9ZQDNZFID4'),	# 3H7
+	('KindleColorSoftUnknown_3JT',				0xE5B,	'A2CU9ZQDNZFID4'),	# 3JT?
+	('KindleColorSoftUnknown_3J6',				0xE46,	'A2CU9ZQDNZFID4'),	# 3J6?
+	('KindleColorSoftUnknown_456',				0x10A6,	'A2CU9ZQDNZFID4'),	# 456?
 	('KindleUnknown', 0x00)
 ]
 
