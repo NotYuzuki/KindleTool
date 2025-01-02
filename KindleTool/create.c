@@ -2013,8 +2013,8 @@ int
 						char*  endptr;
 						Device dev_code = (Device) strtoul(optarg, &endptr, 16);
 						// Check that it even remotely looks like a device code, old or new, first...
-						// NOTE: The range is 01 to 0VF for now, update as needed!
-						if (*endptr != '\0' || dev_code <= 0x00 || dev_code > 0x3AF) {
+						// NOTE: The range is 01 to A89 for now, update as needed!
+						if (*endptr != '\0' || dev_code <= 0x00 || dev_code > 0x2909) {
 							// That was either an out of range hexadecimal value,
 							// or not an hexadecimal value at all...
 							if (strcmp(convert_device_id(dev_code), "Unknown") == 0) {
