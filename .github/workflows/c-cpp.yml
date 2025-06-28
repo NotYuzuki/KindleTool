@@ -20,6 +20,5 @@ jobs:
 
     - name: Build with make in KindleTool
       run: |
-        cd KindleTool
         make
       shell: bash
